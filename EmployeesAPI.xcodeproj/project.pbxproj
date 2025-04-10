@@ -6,17 +6,44 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FBC11F842DA7EE99006CE87C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBC11F802DA7EE99006CE87C /* Assets.xcassets */; };
+		FBC11F852DA7EE9A006CE87C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC11F812DA7EE99006CE87C /* ContentView.swift */; };
+		FBC11F862DA7EE9A006CE87C /* EmployeesAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC11F822DA7EE99006CE87C /* EmployeesAPIApp.swift */; };
+		FBC11F8B2DA7EF05006CE87C /* EmployeeDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC11F8A2DA7EF05006CE87C /* EmployeeDTO.swift */; };
+		FBC11F8D2DA7EF58006CE87C /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC11F8C2DA7EF58006CE87C /* Employee.swift */; };
+		FBC11F8F2DA7EFC7006CE87C /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC11F8E2DA7EFC7006CE87C /* Enums.swift */; };
+		FBC11F922DA7F58B006CE87C /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC11F912DA7F58B006CE87C /* URL.swift */; };
+		FBC11F942DA7F93B006CE87C /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC11F932DA7F93B006CE87C /* URLRequest.swift */; };
+		FBC11F962DA7F9FB006CE87C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC11F952DA7F9FB006CE87C /* NetworkError.swift */; };
+		FBC11F982DA7FA1C006CE87C /* NetworkInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC11F972DA7FA1C006CE87C /* NetworkInteractor.swift */; };
+		FBC11F9A2DA7FA60006CE87C /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC11F992DA7FA60006CE87C /* URLSession.swift */; };
+		FBC11F9D2DA7FFDC006CE87C /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC11F9C2DA7FFDC006CE87C /* Repository.swift */; };
+		FBC11F9F2DA800CF006CE87C /* APIDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC11F9E2DA800CF006CE87C /* APIDTO.swift */; };
+		FBC11FA22DA80325006CE87C /* EmployeeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC11FA12DA80325006CE87C /* EmployeeVM.swift */; };
+		FBC11FA52DA80A40006CE87C /* EmpleadosTesting.json in Resources */ = {isa = PBXBuildFile; fileRef = FBC11FA42DA80A40006CE87C /* EmpleadosTesting.json */; };
+		FBC11FA72DA80A56006CE87C /* RepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC11FA62DA80A56006CE87C /* RepositoryTest.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		FBC11F722DA7EE81006CE87C /* EmployeesAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmployeesAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBC11F802DA7EE99006CE87C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBC11F812DA7EE99006CE87C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FBC11F822DA7EE99006CE87C /* EmployeesAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesAPIApp.swift; sourceTree = "<group>"; };
+		FBC11F8A2DA7EF05006CE87C /* EmployeeDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDTO.swift; sourceTree = "<group>"; };
+		FBC11F8C2DA7EF58006CE87C /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		FBC11F8E2DA7EFC7006CE87C /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		FBC11F912DA7F58B006CE87C /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		FBC11F932DA7F93B006CE87C /* URLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
+		FBC11F952DA7F9FB006CE87C /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		FBC11F972DA7FA1C006CE87C /* NetworkInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInteractor.swift; sourceTree = "<group>"; };
+		FBC11F992DA7FA60006CE87C /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
+		FBC11F9C2DA7FFDC006CE87C /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		FBC11F9E2DA800CF006CE87C /* APIDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDTO.swift; sourceTree = "<group>"; };
+		FBC11FA12DA80325006CE87C /* EmployeeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeVM.swift; sourceTree = "<group>"; };
+		FBC11FA42DA80A40006CE87C /* EmpleadosTesting.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EmpleadosTesting.json; sourceTree = "<group>"; };
+		FBC11FA62DA80A56006CE87C /* RepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		FBC11F742DA7EE81006CE87C /* EmployeesAPI */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = EmployeesAPI;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FBC11F6F2DA7EE81006CE87C /* Frameworks */ = {
@@ -32,7 +59,7 @@
 		FBC11F692DA7EE81006CE87C = {
 			isa = PBXGroup;
 			children = (
-				FBC11F742DA7EE81006CE87C /* EmployeesAPI */,
+				FBC11F832DA7EE99006CE87C /* EmployeesAPI */,
 				FBC11F732DA7EE81006CE87C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +70,69 @@
 				FBC11F722DA7EE81006CE87C /* EmployeesAPI.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FBC11F832DA7EE99006CE87C /* EmployeesAPI */ = {
+			isa = PBXGroup;
+			children = (
+				FBC11FA02DA80308006CE87C /* ViewModels */,
+				FBC11F9B2DA7FF5E006CE87C /* Repository */,
+				FBC11F902DA7F4C1006CE87C /* Interface */,
+				FBC11F872DA7EEBB006CE87C /* Model */,
+				FBC11FA32DA80A1D006CE87C /* Resources */,
+				FBC11F802DA7EE99006CE87C /* Assets.xcassets */,
+				FBC11F812DA7EE99006CE87C /* ContentView.swift */,
+				FBC11F822DA7EE99006CE87C /* EmployeesAPIApp.swift */,
+			);
+			path = EmployeesAPI;
+			sourceTree = "<group>";
+		};
+		FBC11F872DA7EEBB006CE87C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FBC11F8A2DA7EF05006CE87C /* EmployeeDTO.swift */,
+				FBC11F8C2DA7EF58006CE87C /* Employee.swift */,
+				FBC11F8E2DA7EFC7006CE87C /* Enums.swift */,
+				FBC11F9E2DA800CF006CE87C /* APIDTO.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FBC11F902DA7F4C1006CE87C /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				FBC11F952DA7F9FB006CE87C /* NetworkError.swift */,
+				FBC11F972DA7FA1C006CE87C /* NetworkInteractor.swift */,
+				FBC11F912DA7F58B006CE87C /* URL.swift */,
+				FBC11F932DA7F93B006CE87C /* URLRequest.swift */,
+				FBC11F992DA7FA60006CE87C /* URLSession.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		FBC11F9B2DA7FF5E006CE87C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				FBC11F9C2DA7FFDC006CE87C /* Repository.swift */,
+				FBC11FA62DA80A56006CE87C /* RepositoryTest.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		FBC11FA02DA80308006CE87C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FBC11FA12DA80325006CE87C /* EmployeeVM.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FBC11FA32DA80A1D006CE87C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FBC11FA42DA80A40006CE87C /* EmpleadosTesting.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +149,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				FBC11F742DA7EE81006CE87C /* EmployeesAPI */,
 			);
 			name = EmployeesAPI;
 			packageProductDependencies = (
@@ -109,6 +196,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBC11F842DA7EE99006CE87C /* Assets.xcassets in Resources */,
+				FBC11FA52DA80A40006CE87C /* EmpleadosTesting.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +208,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBC11F9F2DA800CF006CE87C /* APIDTO.swift in Sources */,
+				FBC11F852DA7EE9A006CE87C /* ContentView.swift in Sources */,
+				FBC11F982DA7FA1C006CE87C /* NetworkInteractor.swift in Sources */,
+				FBC11F9A2DA7FA60006CE87C /* URLSession.swift in Sources */,
+				FBC11F962DA7F9FB006CE87C /* NetworkError.swift in Sources */,
+				FBC11F942DA7F93B006CE87C /* URLRequest.swift in Sources */,
+				FBC11F9D2DA7FFDC006CE87C /* Repository.swift in Sources */,
+				FBC11F8D2DA7EF58006CE87C /* Employee.swift in Sources */,
+				FBC11F8F2DA7EFC7006CE87C /* Enums.swift in Sources */,
+				FBC11F8B2DA7EF05006CE87C /* EmployeeDTO.swift in Sources */,
+				FBC11F862DA7EE9A006CE87C /* EmployeesAPIApp.swift in Sources */,
+				FBC11FA72DA80A56006CE87C /* RepositoryTest.swift in Sources */,
+				FBC11FA22DA80325006CE87C /* EmployeeVM.swift in Sources */,
+				FBC11F922DA7F58B006CE87C /* URL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +372,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cxcarvaj.EmployeesAPI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -297,7 +400,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cxcarvaj.EmployeesAPI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

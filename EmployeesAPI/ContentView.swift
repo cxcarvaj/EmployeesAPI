@@ -8,17 +8,48 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var vm = EmployeeVM()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        List(vm.employees) { employee in
+            HStack {
+                VStack(alignment: .leading){
+                    Text("\(employee.lastName), \(employee.name)")
+                        .font(.headline)
+                    Text(employee.email)
+                        .font(.footnote)
+                        .foregroundStyle(.secondary)
+                }
+                Spacer()
+                AsyncImage(url: employee.avatarURL) { avatarImg in
+                    avatarImg
+                        .resizable()
+                        .scaledToFit()
+                        .padding()
+                        .frame(width: 75)
+                        .background(Color.gray.opacity(0.2))
+                        .background(in: Circle())
+                } placeholder: {
+                    Image(systemName: "person")
+                        .resizable()
+                        .scaledToFit()
+                        .padding()
+                        .frame(width: 75)
+                        .background(Color.gray.opacity(0.2))
+                        .background(in: Circle())
+                }
+
+            }
         }
-        .padding()
+        .alert("Employees data error", isPresented: $vm.showAlert) {
+            
+        } message: {
+            Text(vm.errorMsg)
+        }
+
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView(vm: EmployeeVM(repository: NetworkTest()))
 }
