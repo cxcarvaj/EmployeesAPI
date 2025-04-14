@@ -11,34 +11,23 @@ struct ContentView: View {
     @State var vm = EmployeeVM()
     
     var body: some View {
-        List(vm.employees) { employee in
-            HStack {
-                VStack(alignment: .leading){
-                    Text("\(employee.lastName), \(employee.name)")
-                        .font(.headline)
-                    Text(employee.email)
-                        .font(.footnote)
-                        .foregroundStyle(.secondary)
+        NavigationStack {
+            List {
+                ForEach(Department.allCases) { dpt in
+                    Section {
+                        ForEach(vm.getEmployeeByDpt(dpt: dpt)) { employee in
+                            NavigationLink(value: employee) {
+                                EmployeeCell(employee: employee)
+                            }
+                        }
+                    } header: {
+                        Text(dpt.description)
+                    }
                 }
-                Spacer()
-                AsyncImage(url: employee.avatarURL) { avatarImg in
-                    avatarImg
-                        .resizable()
-                        .scaledToFit()
-                        .padding()
-                        .frame(width: 75)
-                        .background(Color.gray.opacity(0.2))
-                        .background(in: Circle())
-                } placeholder: {
-                    Image(systemName: "person")
-                        .resizable()
-                        .scaledToFit()
-                        .padding()
-                        .frame(width: 75)
-                        .background(Color.gray.opacity(0.2))
-                        .background(in: Circle())
-                }
-
+            }
+            .navigationTitle("Employees")
+            .navigationDestination(for: Employee.self) { employee in
+                EmployeeEditView(vm: EmployeeEditVM(employee: employee))
             }
         }
         .alert("Employees data error", isPresented: $vm.showAlert) {

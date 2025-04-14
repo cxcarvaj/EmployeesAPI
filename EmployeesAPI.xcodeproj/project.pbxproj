@@ -23,6 +23,14 @@
 		FBC11FA22DA80325006CE87C /* EmployeeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC11FA12DA80325006CE87C /* EmployeeVM.swift */; };
 		FBC11FA52DA80A40006CE87C /* EmpleadosTesting.json in Resources */ = {isa = PBXBuildFile; fileRef = FBC11FA42DA80A40006CE87C /* EmpleadosTesting.json */; };
 		FBC11FA72DA80A56006CE87C /* RepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC11FA62DA80A56006CE87C /* RepositoryTest.swift */; };
+		FBC11FA92DA839F1006CE87C /* EmployeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC11FA82DA839F1006CE87C /* EmployeeCell.swift */; };
+		FBC11FAC2DA83A49006CE87C /* EmployeeAvatarOld.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC11FAB2DA83A49006CE87C /* EmployeeAvatarOld.swift */; };
+		FBC11FAE2DA83B14006CE87C /* EmployeeEditVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC11FAD2DA83B14006CE87C /* EmployeeEditVM.swift */; };
+		FBC11FB02DA83BCE006CE87C /* EmployeeEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC11FAF2DA83BCE006CE87C /* EmployeeEditView.swift */; };
+		FBC11FB22DA87065006CE87C /* AsyncImageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC11FB12DA87065006CE87C /* AsyncImageVM.swift */; };
+		FBC11FB42DA87088006CE87C /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC11FB32DA87088006CE87C /* ImageDownloader.swift */; };
+		FBC11FB62DA87095006CE87C /* EmployeeAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC11FB52DA87095006CE87C /* EmployeeAvatar.swift */; };
+		FBC11FB92DACB2BD006CE87C /* ComponentKit in Frameworks */ = {isa = PBXBuildFile; productRef = FBC11FB82DACB2BD006CE87C /* ComponentKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +51,13 @@
 		FBC11FA12DA80325006CE87C /* EmployeeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeVM.swift; sourceTree = "<group>"; };
 		FBC11FA42DA80A40006CE87C /* EmpleadosTesting.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EmpleadosTesting.json; sourceTree = "<group>"; };
 		FBC11FA62DA80A56006CE87C /* RepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTest.swift; sourceTree = "<group>"; };
+		FBC11FA82DA839F1006CE87C /* EmployeeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCell.swift; sourceTree = "<group>"; };
+		FBC11FAB2DA83A49006CE87C /* EmployeeAvatarOld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeAvatarOld.swift; sourceTree = "<group>"; };
+		FBC11FAD2DA83B14006CE87C /* EmployeeEditVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeEditVM.swift; sourceTree = "<group>"; };
+		FBC11FAF2DA83BCE006CE87C /* EmployeeEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeEditView.swift; sourceTree = "<group>"; };
+		FBC11FB12DA87065006CE87C /* AsyncImageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageVM.swift; sourceTree = "<group>"; };
+		FBC11FB32DA87088006CE87C /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		FBC11FB52DA87095006CE87C /* EmployeeAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeAvatar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBC11FB92DACB2BD006CE87C /* ComponentKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +91,7 @@
 		FBC11F832DA7EE99006CE87C /* EmployeesAPI */ = {
 			isa = PBXGroup;
 			children = (
+				FBC11FAA2DA83A37006CE87C /* Components */,
 				FBC11FA02DA80308006CE87C /* ViewModels */,
 				FBC11F9B2DA7FF5E006CE87C /* Repository */,
 				FBC11F902DA7F4C1006CE87C /* Interface */,
@@ -82,6 +99,7 @@
 				FBC11FA32DA80A1D006CE87C /* Resources */,
 				FBC11F802DA7EE99006CE87C /* Assets.xcassets */,
 				FBC11F812DA7EE99006CE87C /* ContentView.swift */,
+				FBC11FAF2DA83BCE006CE87C /* EmployeeEditView.swift */,
 				FBC11F822DA7EE99006CE87C /* EmployeesAPIApp.swift */,
 			);
 			path = EmployeesAPI;
@@ -113,8 +131,8 @@
 		FBC11F9B2DA7FF5E006CE87C /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				FBC11FB32DA87088006CE87C /* ImageDownloader.swift */,
 				FBC11F9C2DA7FFDC006CE87C /* Repository.swift */,
-				FBC11FA62DA80A56006CE87C /* RepositoryTest.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -122,7 +140,9 @@
 		FBC11FA02DA80308006CE87C /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				FBC11FB12DA87065006CE87C /* AsyncImageVM.swift */,
 				FBC11FA12DA80325006CE87C /* EmployeeVM.swift */,
+				FBC11FAD2DA83B14006CE87C /* EmployeeEditVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -131,8 +151,19 @@
 			isa = PBXGroup;
 			children = (
 				FBC11FA42DA80A40006CE87C /* EmpleadosTesting.json */,
+				FBC11FA62DA80A56006CE87C /* RepositoryTest.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		FBC11FAA2DA83A37006CE87C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FBC11FA82DA839F1006CE87C /* EmployeeCell.swift */,
+				FBC11FAB2DA83A49006CE87C /* EmployeeAvatarOld.swift */,
+				FBC11FB52DA87095006CE87C /* EmployeeAvatar.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +183,7 @@
 			);
 			name = EmployeesAPI;
 			packageProductDependencies = (
+				FBC11FB82DACB2BD006CE87C /* ComponentKit */,
 			);
 			productName = EmployeesAPI;
 			productReference = FBC11F722DA7EE81006CE87C /* EmployeesAPI.app */;
@@ -181,6 +213,9 @@
 			);
 			mainGroup = FBC11F692DA7EE81006CE87C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FBC11FB72DACB2BD006CE87C /* XCRemoteSwiftPackageReference "ComponentKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FBC11F732DA7EE81006CE87C /* Products */;
 			projectDirPath = "";
@@ -211,16 +246,23 @@
 				FBC11F9F2DA800CF006CE87C /* APIDTO.swift in Sources */,
 				FBC11F852DA7EE9A006CE87C /* ContentView.swift in Sources */,
 				FBC11F982DA7FA1C006CE87C /* NetworkInteractor.swift in Sources */,
+				FBC11FAE2DA83B14006CE87C /* EmployeeEditVM.swift in Sources */,
+				FBC11FB02DA83BCE006CE87C /* EmployeeEditView.swift in Sources */,
+				FBC11FB62DA87095006CE87C /* EmployeeAvatar.swift in Sources */,
 				FBC11F9A2DA7FA60006CE87C /* URLSession.swift in Sources */,
+				FBC11FB42DA87088006CE87C /* ImageDownloader.swift in Sources */,
 				FBC11F962DA7F9FB006CE87C /* NetworkError.swift in Sources */,
 				FBC11F942DA7F93B006CE87C /* URLRequest.swift in Sources */,
 				FBC11F9D2DA7FFDC006CE87C /* Repository.swift in Sources */,
 				FBC11F8D2DA7EF58006CE87C /* Employee.swift in Sources */,
 				FBC11F8F2DA7EFC7006CE87C /* Enums.swift in Sources */,
 				FBC11F8B2DA7EF05006CE87C /* EmployeeDTO.swift in Sources */,
+				FBC11FB22DA87065006CE87C /* AsyncImageVM.swift in Sources */,
+				FBC11FA92DA839F1006CE87C /* EmployeeCell.swift in Sources */,
 				FBC11F862DA7EE9A006CE87C /* EmployeesAPIApp.swift in Sources */,
 				FBC11FA72DA80A56006CE87C /* RepositoryTest.swift in Sources */,
 				FBC11FA22DA80325006CE87C /* EmployeeVM.swift in Sources */,
+				FBC11FAC2DA83A49006CE87C /* EmployeeAvatarOld.swift in Sources */,
 				FBC11F922DA7F58B006CE87C /* URL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +469,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FBC11FB72DACB2BD006CE87C /* XCRemoteSwiftPackageReference "ComponentKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:cxcarvaj/ComponentKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FBC11FB82DACB2BD006CE87C /* ComponentKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBC11FB72DACB2BD006CE87C /* XCRemoteSwiftPackageReference "ComponentKit" */;
+			productName = ComponentKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FBC11F6A2DA7EE81006CE87C /* Project object */;
 }

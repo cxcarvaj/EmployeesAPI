@@ -32,4 +32,8 @@ final class EmployeeVM {
             print("Error: \(error)")
         }
     }
+    
+    func getEmployeeByDpt(dpt: Department) -> [Employee] {
+         employees.filter { $0.department == dpt }
+     }
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Department: Int, CaseIterable, Codable {
+enum Department: Int, CaseIterable, Codable, Identifiable {
     case accounting = 1
     case businessDevelopment = 2
     case engineering = 3
@@ -21,6 +21,8 @@ enum Department: Int, CaseIterable, Codable {
     case support = 11
     case training = 12
     case unknown
+    
+    var id: Self { self }
 
     var description: String {
         switch self {

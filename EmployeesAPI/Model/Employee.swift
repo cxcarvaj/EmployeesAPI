@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Employee: Identifiable {
+struct Employee: Identifiable, Hashable {
     let id: Int
     let name: String
     let lastName: String
@@ -18,6 +18,10 @@ struct Employee: Identifiable {
     let avatarURL: URL?
     let department: Department
     let gender: Gender
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
 }
 
 extension EmployeeDTO {
