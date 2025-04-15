@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "git@github.com:cxcarvaj/ComponentKit.git",
       "state" : {
-        "revision" : "c1d08ac00b2823490182912bc58199a3f802f4b2",
-        "version" : "0.0.2"
+        "revision" : "0763f48a842727a7be1c526de4eb06d02d7da1e5",
+        "version" : "0.1.6"
       }
     }
   ],

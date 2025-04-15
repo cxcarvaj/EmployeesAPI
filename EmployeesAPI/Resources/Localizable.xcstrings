@@ -1,0 +1,351 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%@, %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@, %2$@"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%2$@, %1$@"
+          }
+        }
+      }
+    },
+    "Accounting" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contabilidad"
+          }
+        }
+      }
+    },
+    "Address" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dirección"
+          }
+        }
+      }
+    },
+    "Business Development" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desarrollo de Negocios"
+          }
+        }
+      }
+    },
+    "Department" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Departamento"
+          }
+        }
+      }
+    },
+    "Edit Employee" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Editar Empleado"
+          }
+        }
+      }
+    },
+    "Email" : {
+      "shouldTranslate" : false
+    },
+    "Employee Data" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Datos del Empleado"
+          }
+        }
+      }
+    },
+    "Employees" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Empleados"
+          }
+        }
+      }
+    },
+    "Employees data error" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error en los datos de empleados"
+          }
+        }
+      }
+    },
+    "Engineering" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingeniería"
+          }
+        }
+      }
+    },
+    "Enter the address." : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingrese la dirección."
+          }
+        }
+      }
+    },
+    "Enter the email of the employee" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingrese el correo del empleado."
+          }
+        }
+      }
+    },
+    "Enter the first name of the employee." : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingrese el nombre del empleado."
+          }
+        }
+      }
+    },
+    "Enter the last name of the employee." : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingrese el apellido del empleado."
+          }
+        }
+      }
+    },
+    "Enter the username of the employee" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingrese el usuario del empleado."
+          }
+        }
+      }
+    },
+    "Enter the ZIP Code." : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingrese el código postal."
+          }
+        }
+      }
+    },
+    "First Name" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nombre"
+          }
+        }
+      }
+    },
+    "Gender" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Género"
+          }
+        }
+      }
+    },
+    "Human Resources" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recursos Humanos"
+          }
+        }
+      }
+    },
+    "Last Name" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apellido"
+          }
+        }
+      }
+    },
+    "Legal" : {
+      "shouldTranslate" : false
+    },
+    "Man" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hombre"
+          }
+        }
+      }
+    },
+    "Marketing" : {
+      "shouldTranslate" : false
+    },
+    "Product Management" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gestión de Productos"
+          }
+        }
+      }
+    },
+    "Professional Data" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Datos Profesionales"
+          }
+        }
+      }
+    },
+    "Research and Development" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Investigación y Desarrollo"
+          }
+        }
+      }
+    },
+    "Sales" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ventas"
+          }
+        }
+      }
+    },
+    "Save" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guardar"
+          }
+        }
+      }
+    },
+    "Services" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Servicios"
+          }
+        }
+      }
+    },
+    "Support" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soporte"
+          }
+        }
+      }
+    },
+    "Training" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entrenamiento"
+          }
+        }
+      }
+    },
+    "Unknown" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desconocido"
+          }
+        }
+      }
+    },
+    "Username" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usuario"
+          }
+        }
+      }
+    },
+    "Woman" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mujer"
+          }
+        }
+      }
+    },
+    "ZIP Code" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Código Postal"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

@@ -24,7 +24,7 @@ enum Department: Int, CaseIterable, Codable, Identifiable {
     
     var id: Self { self }
 
-    var description: String {
+    var description: LocalizedStringResource {
         switch self {
         case .accounting: return "Accounting"
         case .businessDevelopment: return "Business Development"
@@ -43,12 +43,14 @@ enum Department: Int, CaseIterable, Codable, Identifiable {
     }
 }
 
-enum Gender: Int, CaseIterable, Codable {
+enum Gender: Int, CaseIterable, Codable, Identifiable {
     case male = 1
     case female = 2
     case unknown
+    
+    var id: Self { self }
 
-    var description: String {
+    var description: LocalizedStringResource {
         switch self {
         case .male: return "Man"
         case .female: return "Woman"

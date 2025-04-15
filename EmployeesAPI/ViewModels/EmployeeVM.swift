@@ -36,4 +36,17 @@ final class EmployeeVM {
     func getEmployeeByDpt(dpt: Department) -> [Employee] {
          employees.filter { $0.department == dpt }
      }
+    
+    func updateEmployee(_ employee: Employee) async {
+        do {
+            try await repository.updateEmployee(employee: employee)
+            if let index = employees.firstIndex(where: { $0.id == employee.id }) {
+                employees[index] = try await repository.getEmployee(id: employee.id)
+            }
+        } catch {
+            errorMsg = error.localizedDescription
+            showAlert.toggle()
+            print("Error: \(error)")
+        }
+    }
 }

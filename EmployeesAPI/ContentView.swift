@@ -27,8 +27,11 @@ struct ContentView: View {
             }
             .navigationTitle("Employees")
             .navigationDestination(for: Employee.self) { employee in
-                EmployeeEditView(vm: EmployeeEditVM(employee: employee))
+                EmployeeEditView(editVM: EmployeeEditVM(employee: employee), vm: vm)
             }
+        }
+        .refreshable{
+            await vm.getEmployees()
         }
         .alert("Employees data error", isPresented: $vm.showAlert) {
             
@@ -41,4 +44,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView(vm: EmployeeVM(repository: NetworkTest()))
+//        .environment(\.locale, Locale(identifier: "es"))
 }

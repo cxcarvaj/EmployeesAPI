@@ -31,6 +31,8 @@
 		FBC11FB42DA87088006CE87C /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC11FB32DA87088006CE87C /* ImageDownloader.swift */; };
 		FBC11FB62DA87095006CE87C /* EmployeeAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC11FB52DA87095006CE87C /* EmployeeAvatar.swift */; };
 		FBC11FB92DACB2BD006CE87C /* ComponentKit in Frameworks */ = {isa = PBXBuildFile; productRef = FBC11FB82DACB2BD006CE87C /* ComponentKit */; };
+		FBC11FBF2DAD4A8F006CE87C /* LabelFormStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC11FBE2DAD4A8F006CE87C /* LabelFormStyle.swift */; };
+		FBC11FC12DAD6745006CE87C /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = FBC11FC02DAD6745006CE87C /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		FBC11FB12DA87065006CE87C /* AsyncImageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageVM.swift; sourceTree = "<group>"; };
 		FBC11FB32DA87088006CE87C /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		FBC11FB52DA87095006CE87C /* EmployeeAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeAvatar.swift; sourceTree = "<group>"; };
+		FBC11FBE2DAD4A8F006CE87C /* LabelFormStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelFormStyle.swift; sourceTree = "<group>"; };
+		FBC11FC02DAD6745006CE87C /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 				FBC11F9B2DA7FF5E006CE87C /* Repository */,
 				FBC11F902DA7F4C1006CE87C /* Interface */,
 				FBC11F872DA7EEBB006CE87C /* Model */,
+				FBC11FBD2DAD4A7A006CE87C /* Styles */,
 				FBC11FA32DA80A1D006CE87C /* Resources */,
 				FBC11F802DA7EE99006CE87C /* Assets.xcassets */,
 				FBC11F812DA7EE99006CE87C /* ContentView.swift */,
@@ -152,6 +157,7 @@
 			children = (
 				FBC11FA42DA80A40006CE87C /* EmpleadosTesting.json */,
 				FBC11FA62DA80A56006CE87C /* RepositoryTest.swift */,
+				FBC11FC02DAD6745006CE87C /* Localizable.xcstrings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -164,6 +170,14 @@
 				FBC11FB52DA87095006CE87C /* EmployeeAvatar.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		FBC11FBD2DAD4A7A006CE87C /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				FBC11FBE2DAD4A8F006CE87C /* LabelFormStyle.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +224,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"es-419",
 			);
 			mainGroup = FBC11F692DA7EE81006CE87C;
 			minimizedProjectReferenceProxies = 1;
@@ -233,6 +248,7 @@
 			files = (
 				FBC11F842DA7EE99006CE87C /* Assets.xcassets in Resources */,
 				FBC11FA52DA80A40006CE87C /* EmpleadosTesting.json in Resources */,
+				FBC11FC12DAD6745006CE87C /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +277,7 @@
 				FBC11FA92DA839F1006CE87C /* EmployeeCell.swift in Sources */,
 				FBC11F862DA7EE9A006CE87C /* EmployeesAPIApp.swift in Sources */,
 				FBC11FA72DA80A56006CE87C /* RepositoryTest.swift in Sources */,
+				FBC11FBF2DAD4A8F006CE87C /* LabelFormStyle.swift in Sources */,
 				FBC11FA22DA80325006CE87C /* EmployeeVM.swift in Sources */,
 				FBC11FAC2DA83A49006CE87C /* EmployeeAvatarOld.swift in Sources */,
 				FBC11F922DA7F58B006CE87C /* URL.swift in Sources */,
@@ -330,6 +347,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -387,6 +405,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

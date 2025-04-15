@@ -8,31 +8,29 @@
 import Foundation
 
 struct EmployeeUpdated: Codable {
-    let id: Int
-    let name: String
-    let lastName: String
-    let username: String
-    let email: String
-    let address: String
-    let postalCode: String
-    let avatar: String?
-    let department: String
-    let gender: String
+    var id: Int
+    var username: String?
+    var firstName: String?
+    var lastName: String?
+    var email: String?
+    var address: String?
+    var avatar: String?
+    var zipcode: String?
+    var department: String?
+    var gender: String?
 }
 
 extension Employee {
     var toUpdate: EmployeeUpdated {
-        return EmployeeUpdated(
-            id: id,
-            name: name,
-            lastName: lastName,
-            username: username,
-            email: email,
-            address: address,
-            postalCode: postalCode,
-            avatar: avatarURL?.absoluteString,
-            department: department.description,
-            gender: gender.description
-        )
+        return EmployeeUpdated(id: id,
+                               username: username,
+                               firstName: name,
+                               lastName: lastName,
+                               email: email,
+                               address: address,
+                               avatar: avatarURL?.absoluteString,
+                               zipcode: postalCode,
+                               department: department.description.key,
+                               gender: gender.description.key)
     }
 }
